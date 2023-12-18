@@ -14,7 +14,7 @@ public class UnitOfWork : IUnitOfWork
     private IDepartamentoRepository _departamentoRepository;
     public IDepartamentoRepository DepartamentoRepository
     {
-        get => _departamentoRepository ?? (_departamentoRepository = new DepartamentoRepository(_context));
+        get => _departamentoRepository ?? (_departamentoRepository = new DepartamentoRepository(_context)); 
     }
 
     public bool Commit()
